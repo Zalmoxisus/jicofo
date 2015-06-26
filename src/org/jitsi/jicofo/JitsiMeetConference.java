@@ -548,8 +548,13 @@ public class JitsiMeetConference
 
         newParticipant.setSupportedFeatures(features);
 
-        logger.info(
-            address + " has bundle ? " + newParticipant.hasBundleSupport());
+        if (!newParticipant.hasBundleSupport()){
+        	logger.info(address + " has no bundle");
+        	return;
+        }
+        
+        //logger.info(
+        //    address + " has bundle ? " + newParticipant.hasBundleSupport());
 
         // Store instance here as it is set to null when conference is disposed
         ColibriConference conference = this.colibriConference;
