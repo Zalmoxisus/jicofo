@@ -1611,9 +1611,9 @@ public class JitsiMeetConference
                     "Remove source: no jingle session for "
                         + peer.getChatMember().getContactAddress());
 
-                peer.scheduleSSRCsToRemove(ssrcsToRemove);
+                /*peer.scheduleSSRCsToRemove(ssrcsToRemove);
 
-                peer.scheduleSSRCGroupsToRemove(ssrcGroupsToRemove);
+                peer.scheduleSSRCGroupsToRemove(ssrcGroupsToRemove);*/
 
                 continue;
             }
