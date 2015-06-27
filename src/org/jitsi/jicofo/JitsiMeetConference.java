@@ -700,11 +700,6 @@ public class JitsiMeetConference
             }
             catch(OperationFailedException exc)
             {
-                logger.error(
-                        "Failed to allocate channels using bridge: "
-                            + colibriConference.getJitsiVideobridge(), exc);
-                return null;
-                /*
                 String faultyBridge = colibriConference.getJitsiVideobridge();
 
                 logger.error(
@@ -744,7 +739,6 @@ public class JitsiMeetConference
                         "Failed to allocate channels - all bridges are faulty",
                         BRIDGE_FAILURE_ERR_CODE);
                 }
-                */
             }
         }
         // If we reach this point it means that the conference has been disposed
