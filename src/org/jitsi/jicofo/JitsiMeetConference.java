@@ -1181,7 +1181,7 @@ public class JitsiMeetConference
 
         leaveTheRoom();
 
-        jingle.terminateHandlersSessions(this);
+        //jingle.terminateHandlersSessions(this);
 
         listener.conferenceEnded(this);
     }
